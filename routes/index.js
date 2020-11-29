@@ -13,16 +13,7 @@ var storage=multer.diskStorage({
    path(null,file.originalname)}
    });
   var upload=multer({storage:storage})
-//let smtpTransport = nodemailer.createTransport({
- // host: 'smtp.gmail.com',
- //// port: 465,
- /// secure: true,
- // auth: {
- //     type: 'login',
- //     user: 'mohineshsharma9999@gmail.com',
- //     pass: 'namomks9@'
-//  }
-//});
+
 let smtpTransport=nodemailer.createTransport({
   secure: true,
   port: 465,
@@ -87,15 +78,15 @@ else{
   req.body.email.slice(0,req.body.email.length-4)+'1')
   .once('value',function(snapshot){
   let smtpTransport=nodemailer.createTransport({
-    secure: true,
-    port: 465,
-    host: 'smtp.gmail.com',
-    service: 'Gmail',
-    auth: {
-        user: 'mohineshsharma9999@gmail.com',
-        pass: 'namomks9@'
-    }
-  });
+  secure: true,
+  port: 465,
+  host: 'smtp.gmail.com',
+  service: 'Gmail',
+  auth: {
+      user: 'swayamkriti@gmail.com',
+      pass: 'Exc@l2020 '
+  }
+});
    var otp = Math.random();
    otp = otp * 1000000;
    otp = parseInt(otp);
@@ -151,14 +142,14 @@ router.post('/home',upload.single('pic'),function(req,res,next){
 // res.redirect('/otp')
 // res.send('otp')
 let smtpTransport=nodemailer.createTransport({
- secure: true,
- port: 465,
- host: 'smtp.gmail.com',
- service: 'Gmail',
- auth: {
-     user: 'mohineshsharma9999@gmail.com',
-     pass: 'namomks9@'
- }
+  secure: true,
+  port: 465,
+  host: 'smtp.gmail.com',
+  service: 'Gmail',
+  auth: {
+      user: 'swayamkriti@gmail.com',
+      pass: 'Exc@l2020 '
+  }
 });
 var otp = Math.random();
 otp = otp * 1000000;
@@ -195,8 +186,8 @@ else if(snapshot.val().verified=='no'){
   host: 'smtp.gmail.com',
   service: 'Gmail',
   auth: {
-      user: 'mohineshsharma9999@gmail.com',
-      pass: 'namomks9@'
+      user: 'swayamkriti@gmail.com',
+      pass: 'Exc@l2020 '
   }
 });
  var otp = Math.random();
