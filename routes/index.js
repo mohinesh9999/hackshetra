@@ -29,8 +29,8 @@ let smtpTransport=nodemailer.createTransport({
   host: 'smtp.gmail.com',
   service: 'Gmail',
   auth: {
-      user: 'mohineshsharma9999@gmail.com',
-      pass: 'namomks9@'
+      user: 'swayamkriti@gmail.com',
+      pass: 'Exc@l2020 '
   }
 });
 var firebaseConfig = {
