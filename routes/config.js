@@ -5,5 +5,5 @@ module.exports = {
     WEBSITE: 'WEBSTAGING',
     CHANNEL_ID:'WEB',
     INDUSTRY_TYPE_ID: 'payment',
-    CALLBACK_URL: 'http:127.0.0.1:3001/student/paytmreq'
+    CALLBACK_URL: 'https://swayamkirti.herokuapp.com/student/paytmreq'
   };
